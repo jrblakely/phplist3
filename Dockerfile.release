@@ -12,6 +12,7 @@ RUN apt-get install -y apt-utils \
 
 RUN useradd -d /var/www/phpList3 phplist
 
+ARG VERSION=unknown
 RUN echo VERSION=${VERSION}
 
 RUN rm -rf /var/www/phpList3 && mkdir -p /var/www/phpList3
